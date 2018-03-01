@@ -12,6 +12,7 @@
   rpm_key:
     key: https://download.docker.com/linux/centos/gpg
     state: present
+    validate_certs: no
 
 - name: Add Docker repository.
   get_url:
